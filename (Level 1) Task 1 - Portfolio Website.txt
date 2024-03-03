@@ -1,0 +1,314 @@
+#HTML CODE
+************************************************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bendapuid Gnana Vyshnavi - Portfolio</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+
+    <section>
+        <nav>
+          <div class="logo">
+            <h1><span>Bendapudi Gnana Vyshnavi</span></h1>
+          </div>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#contact">Contact </a></li>
+          </ul>
+        </nav>
+    </section> 
+
+    <!-- About Section -->
+
+    <section id="about">
+        <div class="container">
+            <img src="vyshu.jpg" alt="Your Photo">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p><h4>
+                    Hello! I'm Bendapudi Gnana Vyshnavi, a passionate web developer with a focus on creating beautiful and functional websites.
+                    I have expertise in HTML, CSS, and JavaScript, and I enjoy turning complex problems into simple, intuitive, and elegant solutions.
+                    </h4>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>Java</li>
+                <li>MySQL</li>
+                <li>Responsive Design</li>
+                
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <h2>Projects</h2>
+    <div class="projects" id="Projects">
+       
+        <div class="project-card">
+            <img src="water.jpg" alt="Water Quality Predictor">
+            <div class="project-info">
+                <h1>Water Quality Predictor</h1>
+                <p>Technologies Used: Python, Scikit-Learn, Pandas, NumPy, Matplotlib, Seaborn</p>
+                <p>Implemented a prediction system, facilitating optimized water management for safe consumption and environmental sustainability.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="hostel.png" alt="Hostel Allotment">
+            <div class="project-info">
+                <h1>Hostel Allotment</h1>
+                <p>Technologies Used: HTML, CSS, JavaScript, Bootstrap, Servlets</p>
+                <p>Designed a hostel allotment portal for fresher’s in our college.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="finfit.jpg" alt="FinFit App">
+            <div class="project-info">
+                <h1>FinFit App</h1>
+                <p>Programming Language: Java</p>
+                <p>IDE: Android Studio</p>
+                <p>Database: Firebase</p>
+                <p>Built an app to set reminders, access financial tips, and analyze past month expenses.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Download my resume <a href="your-resume.pdf" target="_blank">here</a>.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h3>Contact</h3>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container-1">
+            <p>&copy; 2024 Bendapudi Gnana Vyshnavi. All rights reserved.</p>
+            <!-- Add additional links or information if needed -->
+        </div>
+    </footer>
+
+</body>
+</html>
+
+***************************************************************************************************
+# CSS CODE
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #120a0a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #e9d5be;
+    color: #333;
+}
+section nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: whitesmoke;
+    position: fixed;
+    top: 10;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0px 20px;
+  }
+  section nav .logo {
+      font-size: 35px;
+      color:royalblue;
+      margin: 5px 0;
+      cursor: pointer;
+      position: relative;
+      left: -4%;
+    }
+    section nav ul {
+      list-style: none;
+    }
+    section nav ul li {
+      display: inline-block;
+      margin: 5px 15px;
+    }
+    section nav ul li a {
+      font-size: 20px;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      transition: 0.2s;
+    }
+    section nav ul li a:hover {
+      border-radius: 50px;
+      text-decoration: underline;
+    }
+    section nav .logo span {
+      color: peru;
+      text-decoration: underline;
+    }
+.container {
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.container-1 {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+#about {
+    background-color: #e9d5be;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about img {
+    border-radius: 90%;
+    max-width: 200px;
+    height: auto;
+}
+
+.about-content {
+    margin-top: 20px;
+}
+
+#skills {
+    background-color:  #e9d5be;
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #034223;
+}
+h3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#skills h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #034223;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #0b4b19;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    background-color:  #e9d5be;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.project-card {
+    width: 300px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-info p {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#resume {
+    background-color:  #e9d5be;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+*******************************************************************************************************
